@@ -124,9 +124,9 @@ plot(sx)
 plot(round(1-mx,0))
 
 # Save the resulting maps in the disk
-writeRaster(1-mx, "/run/media/marcos/_home/marcos/tmp/mean_bs_probability.tif")
-writeRaster(sx, "/run/media/marcos/_home/marcos/tmp/sd_bs_probability.tif")
-
+writeRaster(1-mx, "output_data/mean_bs_probability.tif")
+writeRaster(sx, "output_data/sd_bs_probability.tif")
+writeRaster(x, "output_data/predictions.tif")
 
 
 
